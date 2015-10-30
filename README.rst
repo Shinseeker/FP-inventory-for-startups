@@ -30,13 +30,13 @@ accordingly depending what part and the instaliation.
 
 Goals
 =====
--locate how many parts he has in inventory.
+- locate how many parts he has in inventory.
 
--get the price of each part
+- get the price of each part
 
--add/remove parts from the inventory.
+- add/remove parts from the inventory.
 
--produce an estimate of installtion of some of the parts.
+- produce an estimate of installtion of some of the parts.
 
 Problem Scenario:
 =================
