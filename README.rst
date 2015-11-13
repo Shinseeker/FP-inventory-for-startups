@@ -66,8 +66,8 @@ depending on what part i have. The estimate will come with the additional cost o
 
 Acceptance Stories
 ^^^^^^^^^^^^^^^^^^
-Scenario: 1
-````````````
+-Scenario: 1-
+`````````````
 Adding Auto parts into inventory:
 ````````````````````````````````````````````    
 Given that I recieve new auto parts on a daily basis.
@@ -75,12 +75,12 @@ I Would immidetaley put items into inventory.
 
 When selecting 1 I can enter in a 
 new item, along with it I can enter
-additional information
+additional information about it.
 
 Then the info would be stored in the database. 
 
-Scenario: 2
-````````````
+-Scenario: 2-
+`````````````
 Removing auto parts from inventory:
 `````````````````````````````````````````````
 Given that the customers come into the garage,and
@@ -92,7 +92,7 @@ from the database.
 
 Then I can press 2 to remove it from the inventory.
 
-Scenario: 3
+-Scenario: 3-
 `````````````
 Shows one item:
 `````````````````````````````
@@ -105,8 +105,8 @@ price of the item for that customer, and give them a quote.
 When pressing 3 I can access that 1 particular record.
 And then I can charge them accordingly.
 
-Scenario: 4
-````````````
+-Scenario: 4-
+`````````````
 Shows all info!
 ````````````````
 Given that I have to view multiple items at a time to see
