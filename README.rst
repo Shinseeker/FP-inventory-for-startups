@@ -84,10 +84,10 @@ Then the info would be stored in the database.
 Removing auto parts from inventory:
 `````````````````````````````````````````````
 Given that the customers come into the garage,and
-purchase auto parts like tires, rims and shocks, it needs
+purchase auto parts like tires, rims and shocks, the items need
 to be taken off the database. 
 
-When the item is finally purchased i would remove it
+When the item is finally purchased I would remove it
 from the database.
 
 Then I can press 2 to remove it from the inventory.
@@ -97,7 +97,7 @@ Then I can press 2 to remove it from the inventory.
 Shows one item:
 `````````````````````````````
 Given that a customer comes into the garage
-looking for a particular item to be installed.
+looking for a particular item to be installed,
 
 And I can search in the database to instantly check the 
 price of the item for that customer, and give them a quote. 
