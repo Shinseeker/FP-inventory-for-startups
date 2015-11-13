@@ -66,38 +66,58 @@ depending on what part i have. The estimate will come with the additional cost o
 
 Acceptance Stories
 ^^^^^^^^^^^^^^^^^^
++++++++++++
 Scenario: 1
-`````````````
++++++++++++
 Adding Auto parts into inventory:
 ````````````````````````````````````````````    
-Given that I recieve auto parts on a daily basis.
-I Would immidetaley put items into inventory
-By selecting 1 which will let me enter in a 
-new item, And then the info would be stored. 
+Given that I recieve new auto parts on a daily basis.
+I Would immidetaley put items into inventory.
 
+When selecting 1 I can enter in a 
+new item, along with it I can enter
+additional information
 
+Then the info would be stored in the database. 
+
++++++++++++
 Scenario: 2
-`````````````
++++++++++++
 Removing auto parts from inventory:
 `````````````````````````````````````````````
 Given that the customers come into the garage,and
-purchase auto parts like tires, rims and shocks I 
-would need to remove them from the database.
+purchase auto parts like tires, rims and shocks, it needs
+to be taken off the database. 
 
+When the item is finally purchased i would remove it
+from the database.
+
+Then I can press 2 to remove it from the inventory.
+
++++++++++++
 Scenario: 3
-`````````````
-Display a record:
+++++++++++++
+Shows one item:
 `````````````````````````````
-Given that the customers come into the garage
-looking for items to be installed. I can search in 
-the database to instantly check the price of the 
-item. By pressing 2 i can access that 1 particular record.
-Then I can charge them accordingly.
+Given that a customer comes into the garage
+looking for a particular item to be installed.
 
+And I can search in the database to instantly check the 
+price of the item for that customer, and give them a quote. 
+
+When pressing 3 I can access that 1 particular record.
+And then I can charge them accordingly.
+
++++++++++++
 Scenario: 4
-`````````````
++++++++++++
 Shows all info!
 ````````````````
-Given that I have to view multiple items,
-And I have to search for the item in my inventory,
-when i choose option 4 it will show all items.
+Given that I have to view multiple items at a time to see
+what i got,
+
+And I have to search for the item in my inventory to
+look up prices, This way i know what I have in stock.
+
+When i choose option 4 it will show all items.
+And inclue all the details.
