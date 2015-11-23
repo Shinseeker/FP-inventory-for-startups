@@ -43,9 +43,9 @@ def exec_menu(choice):
     return
 
 def add_item():
-    print "Hello would you like to add an item?\n"
+    print "Add an item.\n"
     global ITEMS
-    PID = input('\nEnter product ID: ')
+    PID = raw_input('\nEnter product ID: ')
     PRODUCT = raw_input('\nEnter new item: ')
     MANU = raw_input('\nEnter the manufacturer: ')
     SNUMBER = raw_input('\nEnter the serial number: ')
@@ -61,7 +61,15 @@ def add_item():
  
 
 def remove_item():
-    print "Hello would you like to remove an item?\n"
+    print "Remove an item.\n"
+    global ITEMS
+    REMOVE = raw_input('\nEnter the item you wish to delete: ')
+    if REMOVE in ITEMS:
+        del ITEMS[REMOVE]
+        print REMOVE,':', 'Has been removed from the the inventory'
+    else:
+        print '---------------------------''\n'
+        print REMOVE.upper(), ':', 'Does not exist in the inventory!'
     print "9. Back"
     print "0. Quit" 
     choice = raw_input(" >>  ")
@@ -70,6 +78,12 @@ def remove_item():
 
 def search_item_menu():
     print "Hello would you like to search for an existing item?\n"
+    SEARCH = raw_input('\nWhat item are you looking for? ')
+    print '---------------------------''\n'
+    if SEARCH in ITEMS:
+        print SEARCH, ITEMS[SEARCH]
+    else:
+        print SEARCH , 'This item does not exist in the inventory!'
     print "9. Back"
     print "0. Quit" 
     choice = raw_input(" >>  ")
@@ -78,6 +92,9 @@ def search_item_menu():
 
 def view_item():
     print "Hello would you like to view all  \n"
+    print '-------------------------------''\n'
+    print ITEMS
+    print '-------------------------------''\n'
     print "9. Back"
     print "0. Quit" 
     choice = raw_input(" >>  ")
@@ -110,8 +127,10 @@ menu_actions = {
  
 
 if __name__ == "__main__":
-    global ITEMS
-    ITEMS = pickle.load(open("inventory", 'rb'))
-    print "Successfully loaded"
-    print ITEMS
+    try:
+        ITEMS = pickle.load(open("inventory", 'rb'))
+        print "Successfully loaded"
+        print ITEMS
+    except (IOError, EOFError):
+        ITEMS = {}
     main_menu()
