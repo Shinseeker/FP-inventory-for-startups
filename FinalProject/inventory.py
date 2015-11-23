@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+"""Final Project for IS210."""
 
 import sys, os, pickle
 
@@ -13,6 +13,7 @@ clear = 'cls'
 
 
 def main_menu():
+    """Function for the menu."""
     os.system(clear)
     print "Welcome,\n"
     print "Please choose the menu you want to start"
@@ -30,6 +31,7 @@ def main_menu():
 
 
 def exec_menu(choice):
+    """function that executes the menu."""
     os.system(clear)
     ch = choice.lower()
     if ch == '':
@@ -43,6 +45,7 @@ def exec_menu(choice):
     return
 
 def add_item():
+    """function that adds items into the inventory."""
     print "Add an item.\n"
     global ITEMS
     PID = raw_input('\nEnter product ID: ')
@@ -58,9 +61,9 @@ def add_item():
     exec_menu(choice)
     return
  
- 
 
 def remove_item():
+    """A function that removes an item."""
     print "Remove an item.\n"
     global ITEMS
     REMOVE = raw_input('\nEnter the item you wish to delete: ')
@@ -76,7 +79,9 @@ def remove_item():
     exec_menu(choice)
     return
 
+
 def search_item_menu():
+    """A function that searchs for one item."""
     print "Hello would you like to search for an existing item?\n"
     SEARCH = raw_input('\nWhat item are you looking for? ')
     print '---------------------------''\n'
@@ -91,6 +96,7 @@ def search_item_menu():
     return
 
 def view_item():
+    """A function that displays all items."""
     print "Hello would you like to view all  \n"
     print '-------------------------------''\n'
     print ITEMS
@@ -103,10 +109,13 @@ def view_item():
  
 
 def back():
+    """Function that goes back the main."""
     menu_actions['main_menu']()
+
  
 #save menu to file successfully
 def exit():
+    """Exits the program and saves the data."""
     global ITEMS
     try:
         inventory = open('inventory', 'wb')
