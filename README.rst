@@ -63,3 +63,57 @@ User Stories:
 As Adam, I would want to modify my inventory so i can locate each part. 
 After modfying the inventory,I would look into creating an estimate for the client 
 depending on what part i have. The estimate will come with the additional cost of labor.
+
+Acceptance Stories
+^^^^^^^^^^^^^^^^^^
+-Scenario: 1-
+`````````````
+Adding Auto parts into inventory:
+````````````````````````````````````````````    
+Given that I recieve new auto parts on a daily basis.
+I Would immidetaley put items into inventory.
+
+When selecting 1 I can enter in a 
+new item, along with it I can enter
+additional information about it.
+
+Then the info would be stored in the database. 
+
+-Scenario: 2-
+`````````````
+Removing auto parts from inventory:
+`````````````````````````````````````````````
+Given that the customers come into the garage,and
+purchase auto parts like tires, rims and shocks, the items need
+to be taken off the database. 
+
+When the item is finally purchased I would remove it
+from the database.
+
+Then I can press 2 to remove it from the inventory.
+
+-Scenario: 3-
+`````````````
+Shows one item:
+`````````````````````````````
+Given that a customer comes into the garage
+looking for a particular item to be installed,
+
+And I can search in the database to instantly check the 
+price of the item for that customer, and give them a quote. 
+
+When pressing 3 I can access that 1 particular record.
+And then I can charge them accordingly.
+
+-Scenario: 4-
+`````````````
+Shows all info!
+````````````````
+Given that I have to view multiple items at a time to see
+what i got,
+
+And I have to search for the item in my inventory to
+look up prices, This way i know what I have in stock.
+
+When i choose option 4 it will show all items.
+And inclue all the details.
