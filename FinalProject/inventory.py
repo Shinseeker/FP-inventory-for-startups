@@ -44,6 +44,7 @@ def exec_menu(choice):
             menu_actions['main_menu']()
     return
 
+
 def add_item():
     """function that adds items into the inventory."""
     print "Add an item.\n"
@@ -60,7 +61,7 @@ def add_item():
     choice = raw_input(" >>  ")
     exec_menu(choice)
     return
- 
+
 
 def remove_item():
     """A function that removes an item."""
@@ -94,6 +95,7 @@ def search_item_menu():
     choice = raw_input(" >>  ")
     exec_menu(choice)
     return
+
 
 def view_item():
     """A function that displays all items."""
