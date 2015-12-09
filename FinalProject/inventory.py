@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Final Project for IS210."""
+"""FP for IS210 - Inventory DB."""
 
 import sys, os, pickle
 
@@ -26,7 +26,6 @@ def main_menu():
     print "\n0. Quit"
     choice = raw_input(" >>  ")
     exec_menu(choice)
- 
     return
 
 
