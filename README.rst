@@ -41,7 +41,7 @@ Goals
 Problem Scenario:
 =================
 
-Project M-spec is a star-up business. They dont have all the tools needed to
+Project M-spec is a star-up business. They dont have the software needed to
 keep track of all the inventory that comes in. Having a basic excel
 spreadsheet to record the inventory is not good enough.
 
@@ -55,14 +55,14 @@ invest in his startup.
 Value Proposition
 =================
 This inventory software will save him thousands of dollars. Money he will 
-need to invest in more parts and mechanics.With this software it easy to 
-track, manage, and profit off the inventory. 
+need to invest in more parts and employees like administrative staff and mechanics.
+With this software it would make it easier to track, manage, and profit off the inventory. 
 
 User Stories:
 =============
 As Adam, I would want to modify my inventory so i can locate each part. 
 After modfying the inventory,I would look into creating an estimate for the client 
-depending on what part i have. The estimate will come with the additional cost of labor.
+depending on what part i have.
 
 Acceptance Stories
 ^^^^^^^^^^^^^^^^^^
