@@ -90,7 +90,7 @@ to be taken off the database.
 When the item is finally purchased I would remove it
 from the database.
 
-Then I can press 2 to remove it from the inventory.
+Then I press 2 to finally remove it from the inventory.
 
 [Scenario: 3]
 `````````````
