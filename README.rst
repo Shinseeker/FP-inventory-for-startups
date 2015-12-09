@@ -66,7 +66,7 @@ depending on what part i have. The estimate will come with the additional cost o
 
 Acceptance Stories
 ^^^^^^^^^^^^^^^^^^
--Scenario: 1-
+[Scenario: 1]
 `````````````
 Adding Auto parts into inventory:
 ````````````````````````````````````````````    
@@ -79,7 +79,7 @@ additional information about it.
 
 Then the info would be stored in the database. 
 
--Scenario: 2-
+[Scenario: 2]
 `````````````
 Removing auto parts from inventory:
 `````````````````````````````````````````````
@@ -92,7 +92,7 @@ from the database.
 
 Then I can press 2 to remove it from the inventory.
 
--Scenario: 3-
+[Scenario: 3]
 `````````````
 Shows one item:
 `````````````````````````````
@@ -105,7 +105,7 @@ price of the item for that customer, and give them a quote.
 When pressing 3 I can access that 1 particular record.
 And then I can charge them accordingly.
 
--Scenario: 4-
+[Scenario: 4]
 `````````````
 Shows all info!
 ````````````````
@@ -116,4 +116,4 @@ And I have to search for the item in my inventory to
 look up prices, This way i know what I have in stock.
 
 When i choose option 4 it will show all items.
-And inclue all the details.
+Then it includes all the details.
