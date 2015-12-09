@@ -100,7 +100,7 @@ Given that a customer comes into the garage
 looking for a particular item to be installed,
 
 And I can search in the database to instantly check the 
-price of the item for that customer, and give them a quote. 
+price of the item for that customer, to give them a quote. 
 
 When pressing 3 I can access that 1 particular record.
 And then I can charge them accordingly.
