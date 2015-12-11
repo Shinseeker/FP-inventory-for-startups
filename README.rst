@@ -41,7 +41,7 @@ Goals
 Problem Scenario:
 =================
 
-Project M-spec is a star-up business. They dont have all the tools needed to
+Project M-spec is a star-up business. They dont have the software needed to
 keep track of all the inventory that comes in. Having a basic excel
 spreadsheet to record the inventory is not good enough.
 
@@ -55,18 +55,18 @@ invest in his startup.
 Value Proposition
 =================
 This inventory software will save him thousands of dollars. Money he will 
-need to invest in more parts and mechanics.With this software it easy to 
-track, manage, and profit off the inventory. 
+need to invest in more parts and employees like administrative staff and mechanics.
+With this software it would make it easier to track, manage, and profit off the inventory. 
 
 User Stories:
 =============
 As Adam, I would want to modify my inventory so i can locate each part. 
 After modfying the inventory,I would look into creating an estimate for the client 
-depending on what part i have. The estimate will come with the additional cost of labor.
+depending on what part i have.
 
 Acceptance Stories
 ^^^^^^^^^^^^^^^^^^
--Scenario: 1-
+[Scenario: 1]
 `````````````
 Adding Auto parts into inventory:
 ````````````````````````````````````````````    
@@ -79,7 +79,7 @@ additional information about it.
 
 Then the info would be stored in the database. 
 
--Scenario: 2-
+[Scenario: 2]
 `````````````
 Removing auto parts from inventory:
 `````````````````````````````````````````````
@@ -90,9 +90,9 @@ to be taken off the database.
 When the item is finally purchased I would remove it
 from the database.
 
-Then I can press 2 to remove it from the inventory.
+Then I press 2 to finally remove it from the inventory.
 
--Scenario: 3-
+[Scenario: 3]
 `````````````
 Shows one item:
 `````````````````````````````
@@ -100,12 +100,14 @@ Given that a customer comes into the garage
 looking for a particular item to be installed,
 
 And I can search in the database to instantly check the 
-price of the item for that customer, and give them a quote. 
+price of the item for that customer, to give them a quote. 
 
-When pressing 3 I can access that 1 particular record.
-And then I can charge them accordingly.
+When pressing 3 I can search for that 1 particular record by 
+a product ID number.
 
--Scenario: 4-
+Then I can charge them accordingly.
+
+[Scenario: 4]
 `````````````
 Shows all info!
 ````````````````
@@ -116,4 +118,4 @@ And I have to search for the item in my inventory to
 look up prices, This way i know what I have in stock.
 
 When i choose option 4 it will show all items.
-And inclue all the details.
+Then it includes all the details.
